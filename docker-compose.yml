@@ -1,0 +1,11 @@
+version: "3"
+services:
+  dis-web:
+    restart: always
+    build: .
+    container_name: "dis-web"
+    ports:
+      - 7860:7860
+    tty: true
+    volumes:
+      - ./:/src_container
