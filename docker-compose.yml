@@ -7,5 +7,6 @@ services:
     ports:
       - 7860:7860
     tty: true
+    command: python app.py
     volumes:
       - ./:/src_container
